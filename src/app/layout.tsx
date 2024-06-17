@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import localFont from 'next/font/local';
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
 const clashDisplay = localFont({
   src: [

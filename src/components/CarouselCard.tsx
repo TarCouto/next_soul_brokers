@@ -1,7 +1,6 @@
 'use client'
 import React, { useCallback } from 'react';
 import Image from 'next/image';
-import 'tailwindcss/tailwind.css';
 import useEmblaCarousel from 'embla-carousel-react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 

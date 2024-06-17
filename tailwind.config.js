@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,10 +11,10 @@ const config: Config = {
         'clash': ['"Clash Display"', 'sans-serif'],
       },
       fontSize: {
-        'custom-lg': '2rem', // 32px
-        'custom-xl': '3rem', // 48px
-        'custom-2xl': '4rem', // 64px
-        'custom-3xl': '5rem', // 80px
+        'custom-lg': '2rem',
+        'custom-xl': '3rem',
+        'custom-2xl': '4rem',
+        'custom-3xl': '5rem',
       },
       lineHeight: {
         'custom-tight': '1.1',
@@ -29,5 +27,3 @@ const config: Config = {
   },
   plugins: [],
 };
-
-export default config;
