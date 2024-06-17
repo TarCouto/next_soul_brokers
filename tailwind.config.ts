@@ -8,13 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        'general-sans': ['"General Sans"', 'sans-serif'],
+        'clash': ['"Clash Display"', 'sans-serif'],
+      },
+      fontSize: {
+        'custom-lg': '2rem', // 32px
+        'custom-xl': '3rem', // 48px
+        'custom-2xl': '4rem', // 64px
+        'custom-3xl': '5rem', // 80px
+      },
+      lineHeight: {
+        'custom-tight': '1.1',
+      },
+      colors: {
+        customBlue: '#031356',
+        customTeal: '#01737F',
       },
     },
   },
   plugins: [],
 };
+
 export default config;

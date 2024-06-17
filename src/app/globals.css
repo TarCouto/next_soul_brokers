@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+/* Importar fontes locais */
+@font-face {
+  font-family: 'Clash Display';
+  font-weight: 400;
+  src: url('../font/ClashDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  font-weight: 700;
+  src: url('../font/ClashDisplay-Regular.ttf') format('truetype');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,12 +36,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: 'General Sans', sans-serif;
+}
+
+@layer base {
+  h1 {
+    font-family: 'Clash Display', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Clash Display', sans-serif;
+  }
+
+  h3 {
+    font-family: 'Clash Display', sans-serif;
+  }
+
+  nav {
+    font-family: 'Clash Display', sans-serif;
+  }
+
+  p {
+    font-family: 'General Sans', sans-serif;
+    color: #96A0B5;
+    /* Adiciona a cor de texto para todos os parágrafos */
+  }
 }
 
 @layer utilities {
