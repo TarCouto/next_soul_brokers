@@ -24,22 +24,27 @@ const items = [
   {
     title: "Susep fornece novas dire...",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    imageUrl: "/service1.png",
+    imageUrl: "/card01.png",
   },
   {
     title: "Abril Verde: Segurança e ...",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    imageUrl: "/service1.png",
+    imageUrl: "/card02.png",
   },
   {
     title: "A importância da medicin...",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    imageUrl: "/service1.png",
+    imageUrl: "/card03.png",
   },
   {
     title: "Como o mercado...",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    imageUrl: "/service1.png",
+    imageUrl: "/card04.png",
+  },
+  {
+    title: "Abril Verde: Segurança e ...",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    imageUrl: "/card02.png",
   },
   {
     title: "Como o mercado...",

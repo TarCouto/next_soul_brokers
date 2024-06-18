@@ -28,7 +28,7 @@ const services: Service[] = [
 export default function Services() {
     return (
         <section className="p-20">
-            <h1 className="text-5xl font-black mb-8">Nossos serviços</h1>
+            <h1 className="text-black font-black  text-5xl  mb-8">Nossos serviços</h1>
             <hr className="border-t-2 border-gray-300 mb-8" />
             <div className="space-y-8">
                 {services.map((service, index) => (
@@ -37,7 +37,7 @@ export default function Services() {
                             <Image src={service.imageUrl} alt={service.title} width={300} height={200} className="rounded-sm" />
                         </div>
                         <div className="md:w-2/3 mt-0">
-                            <h3 className="text-4xl font-bold">{service.title}</h3>
+                            <h3 className="text-black font-black  text-4xl ">{service.title}</h3>
                             <p className="mt-4 text-gray-600 md:w-3/5">{service.description}</p>
                             <button className="mt-6 px-4 py-2 bg-white text-black  border border-black rounded-full flex items-center ">
                                 Conheça

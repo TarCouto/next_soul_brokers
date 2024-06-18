@@ -28,15 +28,18 @@ const clashDisplay = localFont({
 interface ContentSectionProps {
     title: string;
     description: string;
+    titleColor: string;
+    buttonBgColor: string;
+    buttonBorderColor: string;
 }
 
-export default function ContentSection({ title, description }: ContentSectionProps) {
+export default function ContentSection({ title, description, titleColor, buttonBgColor, buttonBorderColor }: ContentSectionProps) {
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 mb-10 mt-10">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 items-center mt-11">
                 {/* Primeira coluna */}
-                <div className="lg:col-span-2 flex justify-center lg:justify-start p-2 order-1 lg:order-2">
-                    <h1 className="font-clash text-custom-2xl md:text-custom-4xl lg:text-custom-5xl font-bold leading-tight text-left break-words w-full max-w-[700px]">
+                <div className="text-black font-black lg:col-span-2 flex justify-center lg:justify-start p-2 order-1 lg:order-2 ml-20">
+                    <h1 className="font-clash text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-left break-words w-full max-w-[700px]" style={{ color: titleColor }}>
                         {title}
                     </h1>
                 </div>
@@ -45,7 +48,10 @@ export default function ContentSection({ title, description }: ContentSectionPro
                     <p className="text-lg font-light text-gray-600 leading-relaxed">
                         {description}
                     </p>
-                    <button className="mt-10 inline-flex items-center px-4 py-3 border border-transparent text-base font-medium rounded-full text-white bg-black hover:bg-gray-800">
+                    <button 
+                        className="mt-10 inline-flex items-center px-4 py-3 border text-base font-medium rounded-full text-white hover:bg-gray-800"
+                        style={{ backgroundColor: buttonBgColor, borderColor: buttonBorderColor }}
+                    >
                         Conheça nossos serviços
                         <FaArrowRight className="ml-2" />
                     </button>

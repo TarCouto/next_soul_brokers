@@ -10,16 +10,16 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white shadow-md mt-[61px]">
-            <div className="flex justify-between items-center px-4 py-3 lg:px-20 lg:py-0">
+        <header className="bg-white shadow-md mt-20">
+            <div className="flex justify-between items-center px-4 py-3 lg:px-60 lg:py-3">
                 <div className="flex justify-start">
                     <Link href="/">
                         <div className="relative w-[100px] h-[50px] lg:w-[118px] lg:h-[57px]">
                             <Image
                                 src="/logo1.png" // Ajuste conforme necessário
                                 alt="Soul Brokers Logo"
-                                width={80}
-                                height={30}
+                                width={320}
+                                height={120}
                             />
                         </div>
                     </Link>
@@ -76,6 +76,9 @@ export default function Header() {
             <ContentSection
                 title="Nossa essência é cuidar de você!"
                 description="Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação."
+                titleColor="#101010" // Cor do título
+                buttonBgColor="#0C0A0A" // Cor de fundo do botão
+                buttonBorderColor="#0C0A0A" // Cor da borda do botão
             />
         </header>
     );

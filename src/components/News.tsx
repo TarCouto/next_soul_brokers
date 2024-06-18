@@ -14,8 +14,8 @@ const clashDisplay = localFont({
 
 export default function News() {
     return (
-        <div className="bg-white text-black p-4 md:p-12 ">
-            <h2 className="text-center text-xl font-medium font-clash-display mb-3">Conheça</h2>
+        <div className="bg-white text-black p-6 md:p-40 ">
+            <h2 className="text-center text-black text-xl font-medium font-clash-display mb-3">Conheça</h2>
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 font-clash-display">
                 A tranquilidade que você precisa!
             </h1>
@@ -39,7 +39,7 @@ export default function News() {
                     <div className="flex flex-col md:flex-row h-64">
                         <div className="relative w-full h-2/5 md:w-2/5 md:h-full">
                             <Image
-                                src="/service1.png"
+                                src="/news01.png"
                                 alt="Acompanhamento de Frota"
                                 layout="fill"
                                 objectFit="cover"
@@ -56,7 +56,7 @@ export default function News() {
                     <div className="flex flex-col md:flex-row h-64">
                         <div className="relative w-full h-2/5 md:w-2/5 md:h-full order-last md:order-none">
                             <Image
-                                src="/service1.png"
+                                src="/news02.png"
                                 alt="Segurança Empresarial"
                                 layout="fill"
                                 objectFit="cover"

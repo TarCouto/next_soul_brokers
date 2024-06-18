@@ -26,14 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${clashDisplay.variable} bg-white `}>
+    <html lang="en" className="h-full w-full flex flex-col bg-white relative ">
+      <body className="h-full w-full flex flex-col bg-white relative">
         <Header />
-        <div>
-          <main className=" bg-white">
-            {children}
-          </main>
-        </div>
+        <main className="flex-grow bg-white relative z-10">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -26,9 +26,9 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
     }, [images.length]);
 
     return (
-        <div className="relative  w-full  flex flex-col lg:flex-row -mt-36 ">
+        <div className="relative w-full flex flex-col lg:flex-row -mt-36">
             <div className="flex flex-col w-full lg:w-3/5 mb-4 lg:mb-0">
-                <div className="relative w-full h-[300px] lg:h-[500px] ">
+                <div className="relative w-full h-[300px] lg:h-[500px]">
                     <Image
                         src={images[currentImg].src}
                         alt={`Slide ${currentImg}`}
@@ -36,7 +36,8 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                         objectFit="cover"
                         className="w-full h-full"
                     />
-                    <p className="text-sm absolute bottom-4 left-4 text-white bg-black bg-opacity-50 px-2 py-1 w-3/4 lg:w-1/2">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <p className="text-sm absolute bottom-4 left-4 text-#D9D9D9 bg-opacity-50 px-2 py-1 w-3/4 lg:w-1/2">
                         {images[currentImg].text}
                     </p>
                     <div className="absolute bottom-4 right-4 flex space-x-2">
@@ -64,7 +65,8 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                         objectFit="cover"
                         className="w-full h-full"
                     />
-                    <p className="text-sm absolute bottom-4 left-4 text-white bg-black bg-opacity-50 px-2 py-1 w-3/4 lg:w-1/2">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <p className="text-sm absolute bottom-4 left-4 text-#D9D9D9  bg-opacity-50 px-2 py-1 w-3/4 lg:w-1/2">
                         {images[(currentImg + 1) % images.length].text}
                     </p>
                 </div>

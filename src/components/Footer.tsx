@@ -6,11 +6,15 @@ import { Link } from 'phosphor-react';
 export default function Footer() {
     return (
         <footer className="bg-black text-white p-8">
-            <div className='mb-20'>
+            <div className='mb-20 text-white'>
                 <ContentSection
                     title="Venha tomar um café conosco!"
                     description="Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação."
+                    titleColor="#FFFFFF" // Cor do título
+                    buttonBgColor="#000000" // Cor de fundo do botão
+                    buttonBorderColor="#FFFFFF" // Cor da borda do botão
                 />
+
             </div>
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>

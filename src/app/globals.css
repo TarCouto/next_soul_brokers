@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Importar fontes locais */
 @font-face {
   font-family: 'Clash Display';
@@ -16,32 +15,19 @@
   src: url('../font/ClashDisplay-Regular.ttf') format('truetype');
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
+html, body {
+  margin: 0; /* Remove margens padrão */
+  padding: 0;
+  height: 100%; /* Garante que o html e body ocupem 100% da altura */
+  width: 100%; /* Garante que o html e body ocupem 100% da largura */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   font-family: 'General Sans', sans-serif;
 }
 
 @layer base {
-
-  h1,
-  h2,
-  h3,
-  nav {
+  h1, h2, h3, nav {
     font-family: 'Clash Display', sans-serif;
   }
 
@@ -54,5 +40,48 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 }
