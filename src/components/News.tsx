@@ -14,7 +14,7 @@ const clashDisplay = localFont({
 
 export default function News() {
     return (
-        <div className="bg-white text-black p-6 md:p-40 ">
+        <div className="bg-white text-black p-6 md:p-40">
             <h2 className="text-center text-black text-xl font-medium font-clash-display mb-3">Conheça</h2>
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 font-clash-display">
                 A tranquilidade que você precisa!
@@ -28,9 +28,9 @@ export default function News() {
                         objectFit="cover"
                         className="w-full h-full"
                     />
-                    <div className="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 md:static md:bg-transparent md:text-black">
-                        <h2 className="text-lg font-bold font-clash-display mb-3 text-white md:text-black">Gestão de Transportes</h2>
-                        <p className="text-sm font-clash-display text-gray-300 md:text-black">
+                    <div className="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 z-10">
+                        <h2 className="text-lg font-bold font-clash-display mb-3 text-white">Gestão de Transportes</h2>
+                        <p className="text-sm font-clash-display text-gray-300">
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.
                         </p>
                     </div>
