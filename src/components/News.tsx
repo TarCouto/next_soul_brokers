@@ -14,7 +14,7 @@ const clashDisplay = localFont({
 
 export default function News() {
     return (
-        <div className={`bg-white text-black p-4 md:p-12 ${clashDisplay.variable}`}>
+        <div className="bg-white text-black p-4 md:p-12 ">
             <h2 className="text-center text-xl font-medium font-clash-display mb-3">Conheça</h2>
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 font-clash-display">
                 A tranquilidade que você precisa!
