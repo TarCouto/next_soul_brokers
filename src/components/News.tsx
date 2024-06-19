@@ -38,7 +38,7 @@ export default function News() {
                             />
                         </div>
                         <div className="flex flex-col justify-end p-4 bg-customTeal w-full lg:w-4/4">
-                            <h2 className="text-2x1 font-bold font-clash-display mb-3 text-white">Acompanhamento de Frota</h2>
+                            <h2 className="text-xl font-bold font-clash-display mb-3 text-white">Acompanhamento de Frota</h2>
                             <p className="text-base  font-clash-display text-gray-300">
                                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.
                             </p>
