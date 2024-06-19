@@ -1,6 +1,4 @@
 import { FaArrowRight } from 'react-icons/fa';
-import localFont from 'next/font/local';
-import ImageCarousel from './ImageCarousel';
 
 const images = [
     {
@@ -13,42 +11,37 @@ const images = [
     },
 ];
 
-// Configurando a fonte Clash Display
-const clashDisplay = localFont({
-    src: [
-        {
-            path: '../font/ClashDisplay-Regular.ttf',
-            weight: '400',
-            style: 'normal',
-        },
-    ],
-    variable: '--font-clash-display',
-});
-
 interface ContentSectionProps {
     title: string;
     description: string;
     titleColor: string;
     buttonBgColor: string;
     buttonBorderColor: string;
+    titleTransform: string; // Nova prop para o transform do título
+    descriptionTransform: string; // Nova prop para o transform da descrição
 }
 
-export default function ContentSection({ title, description, titleColor, buttonBgColor, buttonBorderColor }: ContentSectionProps) {
+export default function ContentSection({ title, description, titleColor, buttonBgColor, buttonBorderColor, titleTransform, descriptionTransform }: ContentSectionProps) {
     return (
-        <div className="container mx-auto p-4 mb-10 mt-10">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 items-center mt-11">
-                {/* Primeira coluna */}
-                <div className="text-black font-black lg:col-span-2 flex justify-center lg:justify-start p-2 order-1 lg:order-2 ml-20">
-                    <h1 className="font-clash text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-left break-words w-full max-w-[700px]" style={{ color: titleColor }}>
+        <div className="container mx-auto mb-10 mt-10 lg:mr-8">
+            <div className="flex flex-col lg:flex-row lg:items-center mt-11 lg:w-[1280px] lg:h-[196px] gap-4 ">
+
+                {/* Título alinhado mais à esquerda */}
+                <div className="flex-1 text-black font-black flex justify-center lg:justify-start p-2"
+                     style={{ transform: titleTransform }}> {/* Usando transform para mover */}
+                    <h1 className="font-clash font-black text-2xl md:text-4xl lg:text-7xl leading-tight text-left break-words w-full max-w-[700px]"
+                        style={{ color: titleColor }}>
                         {title}
                     </h1>
                 </div>
-                {/* Segunda coluna */}
-                <div className="lg:col-span-1 flex flex-col items-center lg:items-start p-3 rounded-md mt-3 order-2 lg:order-2 lg:ml-[-20px]">
-                    <p className="text-lg font-light text-gray-600 leading-relaxed">
+
+                {/* Descrição e botão alinhados mais à direita */}
+                <div className="flex-1 flex flex-col items-center lg:items-start p-0 mt-3 lg:mt-0"
+                     style={{ transform: descriptionTransform }}> {/* Usando transform para mover */}
+                    <p className="text-lg font-light text-customGray leading-relaxed w-2/3 lg:w-[70%]">
                         {description}
                     </p>
-                    <button 
+                    <button
                         className="mt-10 inline-flex items-center px-4 py-3 border text-base font-medium rounded-full text-white hover:bg-gray-800"
                         style={{ backgroundColor: buttonBgColor, borderColor: buttonBorderColor }}
                     >

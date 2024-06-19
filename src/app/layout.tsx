@@ -4,16 +4,7 @@ import localFont from 'next/font/local';
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
-const clashDisplay = localFont({
-  src: [
-    {
-      path: '../font/ClashDisplay-Regular.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-clash-display',
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full w-full flex flex-col bg-white relative ">
+    <html lang="en" className="h-full w-full flex flex-col bg-white relative">
       <body className="h-full w-full flex flex-col bg-white relative">
         <Header />
         <main className="flex-grow bg-white relative z-10">

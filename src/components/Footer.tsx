@@ -5,14 +5,16 @@ import { Link } from 'phosphor-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white p-8">
+        <footer className="bg-customBlack  text-white p-8">
             <div className='mb-20 text-white'>
                 <ContentSection
                     title="Venha tomar um café conosco!"
                     description="Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação."
                     titleColor="#FFFFFF" // Cor do título
-                    buttonBgColor="#000000" // Cor de fundo do botão
-                    buttonBorderColor="#FFFFFF" // Cor da borda do botão
+                    buttonBgColor="#0C0A0A" // Cor de fundo do botão
+                    buttonBorderColor="#FFFFFF"
+                    titleTransform="translateX(-130px)"
+                    descriptionTransform="translateX(100px)" // Cor da borda do botão
                 />
 
             </div>
@@ -26,44 +28,56 @@ export default function Footer() {
                             height={57}
                         />
                     </a>
-                    <p className="mb-4 mt-6">
-                        Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação.
-                    </p>
+                    <div className="text-left w-full lg:w-3/5">
+                        <p className="text-left mb-4 mt-6 text-lg leading-relaxed ">
+                            Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação.
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold mb-4">Localização</h3>
                     <p>Praça Silvio Romero, 55 - Conjunto 34</p>
                 </div>
-                <div>
-                    <h3 className="text-xl font-semibold mb-4">Empresa</h3>
-                    <ul>
-                        <li><a href="#" className="hover:underline">Sobre nós</a></li>
-                        <li><a href="#" className="hover:underline">Serviços</a></li>
-                        <li><a href="#" className="hover:underline">Novidades</a></li>
-                        <li><a href="#" className="hover:underline">Localização</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="text-xl font-semibold mb-4">Ajuda</h3>
-                    <ul>
-                        <li><a href="#" className="hover:underline">Políticas de Uso</a></li>
-                        <li><a href="#" className="hover:underline">Privacidade</a></li>
-                        <li><a href="#" className="hover:underline">Termos de uso</a></li>
-                        <li><a href="#" className="hover:underline">FAQs</a></li>
-                    </ul>
+                <div className='space-y-8 lg:space-y-0 lg:space-x-32 lg:flex lg:items-start'>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-4">Empresa</h3>
+                        <ul>
+                            <li><a href="#" className="hover:underline text-customGray">Sobre nós</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">Serviços</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">Novidades</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">Localização</a></li>
+                        </ul>
+                    </div>
+                    <div className=''>
+                        <h3 className="text-xl font-semibold mb-4 ">Ajuda</h3>
+                        <ul>
+                            <li><a href="#" className="hover:underline text-customGray">Políticas de Uso</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">Privacidade</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">Termos de uso</a></li>
+                            <li><a href="#" className="hover:underline text-customGray">FAQs</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div className="border-t border-gray-700 mt-8 pt-4 text-center">
-                <p>2024 Copyright - Todos os Direitos Reservados - SoulBrokers</p>
-                <div className="flex justify-center space-x-4 mt-4">
+            <div className="flex  items-center border-t border-gray-700 mt-2 pt-2 text-center ">
+                <p className='lg:ml-40'>2024 Copyright - Todos os Direitos Reservados - SoulBrokers</p>
+                <div className="flex justify-center my-4 lg:ml-40">
+                    <Image
+                        src="/logofooter.svg"
+                        alt="Soul Brokers Logo"
+                        width={167}
+                        height={65}
+                    />
+                </div>
+                <div className="flex justify-center space-x-4 mt-4 lg:ml-[317px]">
                     <a href="#" aria-label="WhatsApp" className="hover:text-gray-400">
-                        <i className="fab fa-whatsapp"></i>
+                        <Image src="/whatsapp.svg" alt="WhatsApp" width={34} height={34} />
                     </a>
                     <a href="#" aria-label="Instagram" className="hover:text-gray-400">
-                        <i className="fab fa-instagram"></i>
+                        <Image src="/insta.svg" alt="Instagram" width={34} height={34} />
                     </a>
                     <a href="#" aria-label="Facebook" className="hover:text-gray-400">
-                        <i className="fab fa-facebook"></i>
+                        <Image src="/face.svg" alt="Facebook" width={34} height={34} />
                     </a>
                 </div>
             </div>

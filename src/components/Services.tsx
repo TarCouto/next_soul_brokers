@@ -27,7 +27,7 @@ const services: Service[] = [
 
 export default function Services() {
     return (
-        <section className="p-20">
+        <section className="p-40">
             <h1 className="text-black font-black  text-5xl  mb-8">Nossos serviços</h1>
             <hr className="border-t-2 border-gray-300 mb-8" />
             <div className="space-y-8">

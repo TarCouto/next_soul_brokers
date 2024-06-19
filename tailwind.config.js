@@ -22,7 +22,12 @@ module.exports = {
       colors: {
         customBlue: '#031356',
         customTeal: '#01737F',
+        customGray: '#96A0B5',
+        customBlack: "#0C0A0A",
+        customGray2: '#D9D9D9',
+        customgradient: '#0C0A0A',
       },
+     
     },
   },
   plugins: [],
