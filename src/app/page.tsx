@@ -41,13 +41,8 @@ const items = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     imageUrl: "/card04.svg",
   },
-  {
-    title: "Abril Verde: Segurança e ...",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    imageUrl: "/card02.png",
-  },
-  
-  
+
+
 ];
 
 // Configurando a fonte Clash Display

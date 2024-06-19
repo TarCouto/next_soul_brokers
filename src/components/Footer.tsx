@@ -5,7 +5,7 @@ import { Link } from 'phosphor-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-customBlack  text-white p-8">
+        <footer className="bg-customBlack text-white p-8">
             <div className='mb-20 text-white'>
                 <ContentSection
                     title="Venha tomar um café conosco!"
@@ -13,12 +13,11 @@ export default function Footer() {
                     titleColor="#FFFFFF" // Cor do título
                     buttonBgColor="#0C0A0A" // Cor de fundo do botão
                     buttonBorderColor="#FFFFFF"
-                    titleTransform="translateX(-130px)"
+                    titleTransform="translateX(-30px)"
                     descriptionTransform="translateX(100px)" // Cor da borda do botão
                 />
-
             </div>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-7">
                 <div>
                     <a className='mb-40' href="/">
                         <Image
@@ -28,44 +27,45 @@ export default function Footer() {
                             height={57}
                         />
                     </a>
-                    <div className="text-left w-full lg:w-3/5">
+                    <div className="text-left w-full lg:w-5/5">
                         <p className="text-left mb-4 mt-6 text-lg leading-relaxed ">
                             Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação.
                         </p>
                     </div>
                 </div>
-                <div>
+
+                <div className='mt-16'>
                     <h3 className="text-xl font-semibold mb-4">Localização</h3>
                     <p>Praça Silvio Romero, 55 - Conjunto 34</p>
                 </div>
-                <div className='space-y-8 lg:space-y-0 lg:space-x-32 lg:flex lg:items-start'>
+                <div className='lg:flex lg:items-start mt-16'>
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Empresa</h3>
                         <ul>
-                            <li><a href="#" className="hover:underline text-customGray">Sobre nós</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">Serviços</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">Novidades</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">Localização</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Sobre nós</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Serviços</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Novidades</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Localização</a></li>
                         </ul>
                     </div>
-                    <div className=''>
-                        <h3 className="text-xl font-semibold mb-4 ">Ajuda</h3>
+                    <div className='lg:w-6/6 ml-40'>
+                        <h3 className="text-xl font-semibold mb-4">Ajuda</h3>
                         <ul>
-                            <li><a href="#" className="hover:underline text-customGray">Políticas de Uso</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">Privacidade</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">Termos de uso</a></li>
-                            <li><a href="#" className="hover:underline text-customGray">FAQs</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray whitespace-nowrap">Políticas de Uso</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Privacidade</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">Termos de uso</a></li>
+                            <li className="mb-2"><a href="#" className="hover:underline text-customGray">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="flex  items-center border-t border-gray-700 mt-2 pt-2 text-center ">
-                <p className='lg:ml-40'>2024 Copyright - Todos os Direitos Reservados - SoulBrokers</p>
+            <div className="flex items-center border-t border-gray-700 mt-2 pt-2 text-center">
+                <p className='lg:ml-'>2024 Copyright - Todos os Direitos Reservados - SoulBrokers</p>
                 <div className="flex justify-center my-4 lg:ml-40">
                     <Image
                         src="/logofooter.svg"
                         alt="Soul Brokers Logo"
-                        width={167}
+                        width={147}
                         height={65}
                     />
                 </div>

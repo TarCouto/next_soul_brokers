@@ -23,12 +23,12 @@ interface ContentSectionProps {
 
 export default function ContentSection({ title, description, titleColor, buttonBgColor, buttonBorderColor, titleTransform, descriptionTransform }: ContentSectionProps) {
     return (
-        <div className="container mx-auto mb-10 mt-10 lg:mr-8">
+        <div className="container mx-auto mb-10 mt-10 lg:mr-8  ">
             <div className="flex flex-col lg:flex-row lg:items-center mt-11 lg:w-[1280px] lg:h-[196px] gap-4 ">
 
                 {/* Título alinhado mais à esquerda */}
-                <div className="flex-1 text-black font-black flex justify-center lg:justify-start p-2"
-                     style={{ transform: titleTransform }}> {/* Usando transform para mover */}
+                <div className="flex-1 text-black font-black flex justify-center lg:justify-start p-2 "
+                    style={{ transform: titleTransform }}> {/* Usando transform para mover */}
                     <h1 className="font-clash font-black text-2xl md:text-4xl lg:text-7xl leading-tight text-left break-words w-full max-w-[700px]"
                         style={{ color: titleColor }}>
                         {title}
@@ -37,7 +37,7 @@ export default function ContentSection({ title, description, titleColor, buttonB
 
                 {/* Descrição e botão alinhados mais à direita */}
                 <div className="flex-1 flex flex-col items-center lg:items-start p-0 mt-3 lg:mt-0"
-                     style={{ transform: descriptionTransform }}> {/* Usando transform para mover */}
+                    style={{ transform: descriptionTransform }}> {/* Usando transform para mover */}
                     <p className="text-lg font-light text-customGray leading-relaxed w-2/3 lg:w-[70%]">
                         {description}
                     </p>

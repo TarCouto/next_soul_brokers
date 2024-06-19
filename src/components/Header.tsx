@@ -11,8 +11,8 @@ export default function Header() {
 
     return (
         <div>
-            <header className="bg-white pl-32 mt-20 ">
-                <div className="flex  items-center px-4 py-3 lg:ml-[80px] lg:py-3 lg:w-[1280px] lg:h-[65px]">
+            <header className="bg-white lg:pl-32 mt-20 md:pl-20 md:-ml-40">
+                <div className="flex  items-center px-4 py-3 lg:ml-[80px] lg:py-3 lg:w-[1280px] lg:h-[65px] md:ml-[40px] md:py-2 md:w-[960px] md:h-[50px] sm:ml-[20px] sm:py-1 sm:w-[640px] sm:h-[40px]">
                     <div className="flex justify-start lg:w-[167px] lg:h-[65px] ">
                         <Link href="/">
                             <div className="relative w-[100px] h-[50px] lg:w-[167px] lg:h-[65px] lg:mr-[158px]">
@@ -47,7 +47,7 @@ export default function Header() {
                             Localização
                         </Link>
                     </nav>
-                    <div className="hidden lg:flex lg:ml-[158px]">
+                    <div className="hidden  md:ml-[100px] lg:flex lg:ml-[195px] ">
                         <Link href="/" className="whitespace-nowrap inline-flex items-center justify-center px-[25px] py-[13px] border border-[#000000] rounded-full shadow-sm text-base font-medium text-[#000000] bg-white hover:bg-gray-100">
                             Entrar em Contato
                         </Link>
@@ -74,17 +74,17 @@ export default function Header() {
 
                     </nav>
                 )}
-                
+
             </header>
             <ContentSection
-                    title="Nossa essência é cuidar de você!"
-                    description="Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação."
-                    titleColor="#101010" // Cor do título
-                    buttonBgColor="#0C0A0A" // Cor de fundo do botão
-                    buttonBorderColor="#0C0A0A"
-                    titleTransform="translateX(-120px)"
-                    descriptionTransform="translateX(139px)" // Cor da borda do botão
-                />
+                title="Nossa essência é cuidar de você!"
+                description="Somos a Soul Brokers. Temos como propósito prestar serviços e criar soluções de seguros específicas para cada ramo de atuação."
+                titleColor="#101010" // Cor do título
+                buttonBgColor="#0C0A0A" // Cor de fundo do botão
+                buttonBorderColor="#0C0A0A"
+                titleTransform="translateX(-50px)"
+                descriptionTransform="translateX(15px)" // Cor da borda do botão
+            />
         </div>
     );
 }
